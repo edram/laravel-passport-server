@@ -1,0 +1,14 @@
+version: '3'
+services:
+  passport:
+    image: edramkai/laravel:dev
+    networks:
+      - main
+    ports:
+      - 80
+    volumes:
+      - ./:/var/www/html
+
+networks:
+  main:
+    external: true
